@@ -1,6 +1,36 @@
-/*@import 'custom';
+@import 'custom';
 @import "~bootstrap/scss/bootstrap";
-*/
-body {
-  background-color: #FFEEFF;
+
+body{
+    background-color: #FFEEFF;
+    font-family: 'Alata', sans-serif;
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 7fr 1fr;
+        grid-template-areas: "header header header header header header" ". search search search search ." ". . card card . ." "footer footer footer footer footer footer";
+        header{
+            grid-area: header;
+            background-color:#D5B4BB;
+            a{
+                text-decoration: none;
+            }
+        }
+        #search{ 
+            grid-area: search; 
+        }
+        #card{ 
+            grid-area: card; 
+        }
+        footer{ 
+            grid-area: footer; 
+        }
+    }
 }
+  
+ 
+  
+  
+  
+  
+

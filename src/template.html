@@ -8,32 +8,37 @@
     <link href="https://fonts.googleapis.com/css?family=Tomorrow:400,700&display=swap" rel="stylesheet">  
   </head>
   <body class="container">
+  <div class="grid-container">
     <header>
       <h1>Pokemon</h1>
       <a href="#search">Search</a>
       <a href="#card">Card</a>
     </header>
     <section id="search">
-      <form action="">
-        <input type="text" name="name" placeholder="Pokemon's name">
-        <input type="submit" value="Send">
-      </form>
+        <div class="input-group input-group-lg">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroup-sizing-lg">Large</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+          </div>
     </section>
     <section id="card">
-      <div id="front">
-        <div>
-          <img src="" alt="">
-          <img src="" alt="">
-        </div>
-        <p id='name'></p>
-        <ul id="abilities"></ul>
-        
-      </div>
-      <div id="back">
-      </div>
+          <div class="card" style="width: 18rem;">
+              <img src="" class="card-img-top" alt="Pokemon Picture"> <!--sprites-->
+              <div class="card-body">
+                <h5 class="card-title">Pokemon name</h5> <!--species-->
+                <div class="card-text">
+                  <ul id="abilities"></ul>
+                  <ul id="items"></ul>
+                  <ul id="moves"></ul>
+                  <ul id="forms"></ul>
+                </div>
+              </div>
+            </div>
     </section>
     <footer>
 
     </footer>
+  </div>
   </body>
 </html>
