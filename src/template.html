@@ -15,12 +15,22 @@
       <a href="#card">Card</a>
     </header>
     <section id="search">
-        <div class="input-group input-group-lg">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="inputGroup-sizing-lg">Search</span>
+        <form>
+            <div class="form-row align-items-center">
+              <div class="col-sm-3 my-1">
+                <label class="sr-only" for="inlineFormInputGroupUsername">Username</label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text"><img src="https://img.icons8.com/ios/50/000000/heart-pokemon.png"></div>
+                  </div>
+                  <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username">
+                </div>
+              </div>
+              <div class="col-auto my-1">
+                <button type="submit" id="searchbtn" class="btn btn-primary">Submit</button>
+              </div>
             </div>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
-          </div>
+          </form>
     </section>
     <section id="card">
           <div class="card" style="width: 18rem;">
