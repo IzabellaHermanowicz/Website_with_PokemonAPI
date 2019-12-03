@@ -31,6 +31,7 @@ getPokemon("ditto")
                 </div>
             </div>
     `
+    for 
     const pokemonDiv = document.querySelector('.card')
     pokemonDiv.innerHTML = html}
 ;
