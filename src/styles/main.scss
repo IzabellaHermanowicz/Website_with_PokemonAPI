@@ -10,8 +10,8 @@ body{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 0.5fr 0.5fr 5fr 0.5fr;
-        grid-template-areas: "header header header header header header header" ". . . random . . ." ". . card card card . ." ". . . . . . .";
-        grid-row-gap: 2rem; 
+        grid-template-areas: "header header header header header header header" ". . random random random . ." ". . card card card . ." ". . . . . . .";
+        grid-row-gap: 3rem; 
         width: 100%;
         header{
             grid-area: header;
@@ -34,8 +34,12 @@ body{
         }
         #random{ 
             grid-area: random; 
+            text-align: center;
             p{
                 color: #18839C;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 180%;
             }
             #btn{
                 border-width: 0.3rem;
@@ -91,10 +95,23 @@ body{
                 background-color:  #EBFEFE;
                 text-align: center;
                 color: #3968C2;
+                border-radius: 25px;
                .card-title{
                     text-transform: uppercase;
                     font-weight: bold;
                     font-size: 180%;
+               }
+               .card-img-top{
+                   border: 0.4rem solid #FAE427;
+                   border-radius: 25px;
+               }
+               .cardTitle{
+                text-transform: uppercase;
+                font-weight: bold;
+               }
+               p span{
+                text-transform: uppercase;
+                font-weight: bold;
                }
             }          
         }

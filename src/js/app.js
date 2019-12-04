@@ -33,11 +33,17 @@ getPokemon(Math.floor(Math.random() * 808))
             <img src=${data.sprites.front_default} class="card-img-top" alt="Pokemon Picture">
             <div class="card-body">
                 <div class="card-text">
-                  <div>${abi}</div>
-                  ${move}
-                  <p>Type: ${data.types[0].type.name}</p>
-                  <p>Height: ${data.height}</p>
-                  <p>Weight: ${data.weight}</p>
+                  <div>
+                    <p class="cardTitle">Abilities</p>
+                    ${abi}
+                  </div>
+                  <div>
+                    <p class="cardTitle">Moves</p>
+                    ${move}
+                  </div>
+                  <p><span>Type:</span> ${data.types[0].type.name}</p>
+                  <p><span>Height:</span> ${data.height}</p>
+                  <p><span>Weight:</span> ${data.weight}</p>
                 </div>
             </div>
     `
