@@ -29,9 +29,9 @@ getPokemon(Math.floor(Math.random() * 808))
         move +=`<p>${data.moves[k].move.name}</p>`
     }
     const html = `
-        <img src=${data.sprites.front_default} class="card-img-top" alt="Pokemon Picture">
-              <div class="card-body">
-                <h5 class="card-title">${data.name}</h5>
+    <h5 class="card-title"><img src="https://img.icons8.com/color/48/000000/pokeball--v2.png">${data.name}</h5>
+            <img src=${data.sprites.front_default} class="card-img-top" alt="Pokemon Picture">
+            <div class="card-body">
                 <div class="card-text">
                   <div>${abi}</div>
                   ${move}

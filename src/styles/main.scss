@@ -29,6 +29,7 @@ body{
                 float: right;
                 display:inline-block;
                 margin-top: 3rem;
+                margin-left: 2rem;
             }
         }
         #random{ 
@@ -84,16 +85,16 @@ body{
                 }
                 }
             .card{
-                border-color:  #18839C;
-                border-width: 0.2rem;
-                background-color:  #D9F7F5;
+                border-color: #3968C2;
+                border-width: 0.5rem;
+                padding: 1.5rem;
+                background-color:  #EBFEFE;
                 text-align: center;
-                img{
-                  
-                }
+                color: #3968C2;
                .card-title{
                     text-transform: uppercase;
                     font-weight: bold;
+                    font-size: 180%;
                }
             }          
         }
