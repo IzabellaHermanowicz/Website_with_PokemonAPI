@@ -1,11 +1,12 @@
 // build your app here
 export const app = () => 
 
-document.getElementById("btn").addEventListener("click", RandomNumber); 
+document.getElementById("btn").addEventListener("click", refreshPage); 
 
-function RandomNumber(){
-   return Math.floor(Math.random() * 808);
-}
+function refreshPage(){
+    window.location.reload();
+} 
+
 async function getPokemon(num) 
 {
   let response = await fetch(`https://pokeapi.co/api/v2/pokemon/${num}`);
@@ -13,7 +14,7 @@ async function getPokemon(num)
   return data;
 }
 
-getPokemon(1)
+getPokemon(Math.floor(Math.random() * 808))
   .then( data => generateHtml(data));
 
   const generateHtml = (data) => {

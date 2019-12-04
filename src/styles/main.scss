@@ -8,10 +8,10 @@ body{
     font-family: 'Alata', sans-serif;
     .grid-container {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 7fr 1fr;
-        grid-row-gap: 14px; 
-        grid-template-areas: "header header header header header header" ". . random random . ." ". . card card . ." "footer footer footer footer footer footer";
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.5fr 0.5fr 5fr 0.5fr;
+        grid-template-areas: "header header header header header header header" ". . . random . . ." ". . card card card . ." ". . . . . . .";
+        grid-row-gap: 2rem; 
         width: 100%;
         header{
             grid-area: header;
@@ -23,6 +23,7 @@ body{
                 text-decoration: none;
                 color: #17a2b8;
                 font-weight: bold;
+               justify-content: end;
             }
         }
         #random{ 
@@ -33,6 +34,42 @@ body{
         }
         #card{ 
             grid-area: card; 
+            .pulse:hover {
+                -webkit-animation-name: pulse;
+                animation-name: pulse;
+                -webkit-animation-duration: 1s;
+                animation-duration: 1s;
+                -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+                }
+                @-webkit-keyframes pulse {
+                0% {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+                }
+                50% {
+                -webkit-transform: scale3d(1.05, 1.05, 1.05);
+                transform: scale3d(1.05, 1.05, 1.05);
+                }
+                100% {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+                }
+                }
+                @keyframes pulse {
+                0% {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+                }
+                50% {
+                -webkit-transform: scale3d(1.05, 1.05, 1.05);
+                transform: scale3d(1.05, 1.05, 1.05);
+                }
+                100% {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+                }
+                }               
         }
         footer{ 
             grid-area: footer; 
