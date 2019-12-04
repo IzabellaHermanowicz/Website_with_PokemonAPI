@@ -4,7 +4,7 @@
 
 
 body{
-    background-color: #FFEEFF;
+    background-image: linear-gradient(to right, #fdfffb, #f0fee5, #e0fcd1, #cdfbbe, #b8faac);
     font-family: 'Alata', sans-serif;
     .grid-container {
         display: grid;
@@ -15,21 +15,34 @@ body{
         width: 100%;
         header{
             grid-area: header;
-            background-color: #A877BA;
+           border-bottom: 0.1rem solid #18839C;
             h1{
-                color: #FFEEFF;
+                color: #93DA9F;
+                text-align: left;
+                float: left;
+                display:inline-block;
             }
             a{
                 text-decoration: none;
-                color: #17a2b8;
+                color: #18839C;
                 font-weight: bold;
-               justify-content: end;
+                float: right;
+                display:inline-block;
+                margin-top: 3rem;
             }
         }
         #random{ 
             grid-area: random; 
+            p{
+                color: #18839C;
+            }
             #btn{
                 border-width: 0.3rem;
+                background-image: linear-gradient(to right, #95dba0, #82d8a0, #6dd4a2, #53d1a4, #2ecda8);
+                border-color: #2ecda8;
+                i{
+                    color: #d3f0d8;
+                }
             }
         }
         #card{ 
@@ -69,7 +82,20 @@ body{
                 -webkit-transform: scale3d(1, 1, 1);
                 transform: scale3d(1, 1, 1);
                 }
-                }               
+                }
+            .card{
+                border-color:  #18839C;
+                border-width: 0.2rem;
+                background-color:  #D9F7F5;
+                text-align: center;
+                img{
+                  
+                }
+               .card-title{
+                    text-transform: uppercase;
+                    font-weight: bold;
+               }
+            }          
         }
         footer{ 
             grid-area: footer; 

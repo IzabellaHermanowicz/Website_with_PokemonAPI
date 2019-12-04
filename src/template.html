@@ -6,20 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Hello World!</title>
     <link href="https://fonts.googleapis.com/css?family=Tomorrow:400,700&display=swap" rel="stylesheet">  
+    <script src="https://kit.fontawesome.com/fd98d1df96.js" crossorigin="anonymous"></script>
   </head>
   <body class="container">
   <div class="grid-container">
     <header>
-      <h1>Pokemon</h1>
-      <a href="#random">Random</a>
+        <img src="assets/Pokemon.png" alt="Pokemon Logo">
+      <a id="rand" href="#random">Random</a>
       <a href="#card">Card</a>
     </header>
     <section id="random">
         <p>Click and get random Pokemon!</p>
-        <button id="btn" type="button" class="btn btn-outline-info btn-lg"><img src="https://img.icons8.com/color/48/000000/lucky-egg.png"></button>
+        <button id="btn" type="button" class="btn btn-outline-light btn-lg"><i class="fas fa-search"></i></button>
     </section>
     <section id="card">
-          <div class="card pulse" style="width: 18rem;">
+          <div class="card pulse">
           </div>
     </section>
     <footer>
