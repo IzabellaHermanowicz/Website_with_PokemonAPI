@@ -1,6 +1,8 @@
 @import 'custom';
 @import "~bootstrap/scss/bootstrap";
 
+
+
 body{
     background-color: #FFEEFF;
     font-family: 'Alata', sans-serif;
@@ -8,16 +10,26 @@ body{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 7fr 1fr;
-        grid-template-areas: "header header header header header header" ". search search search search ." ". . card card . ." "footer footer footer footer footer footer";
+        grid-row-gap: 14px; 
+        grid-template-areas: "header header header header header header" ". . random random . ." ". . card card . ." "footer footer footer footer footer footer";
+        width: 100%;
         header{
             grid-area: header;
-            background-color:#D5B4BB;
+            background-color: #A877BA;
+            h1{
+                color: #FFEEFF;
+            }
             a{
                 text-decoration: none;
+                color: #17a2b8;
+                font-weight: bold;
             }
         }
-        #search{ 
-            grid-area: search; 
+        #random{ 
+            grid-area: random; 
+            #btn{
+                border-width: 0.3rem;
+            }
         }
         #card{ 
             grid-area: card; 
