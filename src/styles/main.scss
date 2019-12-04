@@ -1,7 +1,11 @@
 @import 'custom';
 @import "~bootstrap/scss/bootstrap";
 
-
+$darker-font-color:#18839C;
+@mixin head-text {
+    text-transform: uppercase;
+    font-weight: bold;
+}
 
 body{
     background-image: linear-gradient(to right, #fdfffb, #f0fee5, #e0fcd1, #cdfbbe, #b8faac);
@@ -10,12 +14,12 @@ body{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 0.5fr 0.5fr 5fr 0.5fr;
-        grid-template-areas: "header header header header header header header" ". . random random random . ." ". . card card card . ." ". . . . . . .";
+        grid-template-areas: "header header header header header header header" ". . random random random . ." ". . card card card . ." ". . . footer . . .";
         grid-row-gap: 3rem; 
         width: 100%;
         header{
             grid-area: header;
-           border-bottom: 0.1rem solid #18839C;
+           border-bottom: 0.1rem solid $darker-font-color;
             h1{
                 color: #93DA9F;
                 text-align: left;
@@ -24,7 +28,7 @@ body{
             }
             a{
                 text-decoration: none;
-                color: #18839C;
+                color: $darker-font-color;
                 font-weight: bold;
                 float: right;
                 display:inline-block;
@@ -36,9 +40,8 @@ body{
             grid-area: random; 
             text-align: center;
             p{
-                color: #18839C;
-                text-transform: uppercase;
-                font-weight: bold;
+                color: $darker-font-color;
+                @include head-text; 
                 font-size: 180%;
             }
             #btn{
@@ -97,8 +100,7 @@ body{
                 color: #3968C2;
                 border-radius: 25px;
                .card-title{
-                    text-transform: uppercase;
-                    font-weight: bold;
+                    @include head-text;
                     font-size: 180%;
                }
                .card-img-top{
@@ -106,17 +108,16 @@ body{
                    border-radius: 25px;
                }
                .cardTitle{
-                text-transform: uppercase;
-                font-weight: bold;
+                @include head-text;
                }
                p span{
-                text-transform: uppercase;
-                font-weight: bold;
+                @include head-text;
                }
             }          
         }
         footer{ 
             grid-area: footer; 
+            color: #b8faac;
         }
     }
 }

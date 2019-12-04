@@ -34,11 +34,11 @@ getPokemon(Math.floor(Math.random() * 808))
             <div class="card-body">
                 <div class="card-text">
                   <div>
-                    <p class="cardTitle">Abilities</p>
+                    <p class="cardTitle">Abilities:</p>
                     ${abi}
                   </div>
                   <div>
-                    <p class="cardTitle">Moves</p>
+                    <p class="cardTitle">Moves:</p>
                     ${move}
                   </div>
                   <p><span>Type:</span> ${data.types[0].type.name}</p>
