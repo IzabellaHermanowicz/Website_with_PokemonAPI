@@ -1,10 +1,13 @@
-@import 'custom';
 @import "~bootstrap/scss/bootstrap";
 
 $darker-font-color:#18839C;
 @mixin head-text {
     text-transform: uppercase;
     font-weight: bold;
+}
+@mixin smaller {
+    text-transform: none;
+    font-size: 80%;
 }
 
 body{
@@ -122,8 +125,15 @@ body{
     }
 }
   
- 
-  
+@media only screen and (max-device-width: 400px) {
+    #card{
+        @include smaller;
+    }
+    .card-title{
+        text-transform: none;
+        font-size: 60%;
+    }
+  }
   
   
   
