@@ -5,3 +5,4 @@ Website handling is easy, you just click the bottom and new Pokemon appears.
 It was made with Bootstrap, SCSS, HTML, JavaScript, Babel, Webpack.
 It uses PokeAPI (https://pokeapi.co/) and ready to use ready-to-use schema (https://github.com/BohdanOne/webpack-babel-bootstrap-scss). 
 There are 807 Pokemons to discover!
+![Website screenshot](1.PNG)
