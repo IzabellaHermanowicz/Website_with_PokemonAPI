@@ -1,5 +1,5 @@
 # Website with PokemonAPI
-Main perpuse of this website is to show random Pokemon with info about it everytime one click on the bottom. 
+Main purpose of this website is to show random Pokemon with info about it everytime one click on the bottom. 
 Colors and design should resemble simple, retro style of Pokemon games. 
 Website handling is easy, you just click the bottom and new Pokemon appears.
 It was made with Bootstrap, SCSS, HTML, JavaScript, Babel, Webpack.
